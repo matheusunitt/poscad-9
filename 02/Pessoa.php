@@ -13,9 +13,4 @@ class Pessoa
     {
         echo "<p>{$this->nome}</p>";
     }
-
-    public function __destruct()
-    {
-        echo "<p>Destruct chamado.</p>";
-    }
 }
