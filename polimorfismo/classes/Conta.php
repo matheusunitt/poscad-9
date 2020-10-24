@@ -2,16 +2,17 @@
 
 namespace Classes;
 
-class Conta
+abstract class Conta
 {
     protected $saldo;
+    const AGENCIA = "BB-UFPB";
 
     public function __construct($saldo = 0)
     {
         $this->saldo = $saldo;
     }
 
-    public function deposita($valor)
+    final public function deposita($valor)
     {
         $this->setSaldo($this->getSaldo() + $valor);
     }
@@ -27,6 +28,7 @@ class Conta
 
     public function imprimeExtrato()
     {
+        echo "<p>" . self::AGENCIA . "</p>";
         echo "<p>Saldo: R$ {$this->getSaldo()}</p>";
     }
 

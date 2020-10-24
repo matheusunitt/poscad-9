@@ -2,7 +2,7 @@
 
 namespace Classes;
 
-class ContaCorrente extends Conta
+final class ContaCorrente extends Conta
 {
     public function __construct($saldo)
     {
