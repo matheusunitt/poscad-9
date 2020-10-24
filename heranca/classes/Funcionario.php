@@ -13,7 +13,7 @@ class Funcionario
 
     public function relatorioFunc()
     {
-        echo "<p>Nome: {$this->nome} | Salário: {$this->salario}</p>";
+        echo "<p>Nome: {$this->getNome()} | Salário: {$this->getSalario()}</p>";
     }
 
     public function getNome()

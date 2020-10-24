@@ -10,6 +10,12 @@ class Programador extends Funcionario
         $this->linguagem = $linguagem;
     }
 
+    public function relatorioFunc()
+    {
+        parent::relatorioFunc();
+        echo "<p>Linguagem de Programação: {$this->getLinguagem()}</p>";
+    }
+
     public function getLinguagem()
     {
         return $this->linguagem;

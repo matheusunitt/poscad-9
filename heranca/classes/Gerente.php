@@ -10,6 +10,12 @@ class Gerente extends Funcionario
         $this->projeto = $projeto;
     }
 
+    public function relatorioFunc()
+    {
+        parent::relatorioFunc();
+        echo "<p>Projeto: {$this->getProjeto()}</p>";
+    }
+
     public function getProjeto()
     {
         return $this->projeto;
