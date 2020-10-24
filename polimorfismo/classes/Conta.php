@@ -25,7 +25,7 @@ class Conta
         }
     }
 
-    public function imprime()
+    public function imprimeExtrato()
     {
         echo "<p>Saldo: R$ {$this->getSaldo()}</p>";
     }
