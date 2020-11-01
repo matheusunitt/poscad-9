@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Contrato</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            width: 400px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="exibir_veiculo.php" method="POST">
+        <p>Nome</p>
+        <input type="text" name="nome" placeholder="Insira o nome" />
+
+        <p>Marca</p>
+        <input type="text" name="marca" placeholder="Insira a marca" />
+
+        <p>Modelo</p>
+        <input type="text" name="modelo" placeholder="Insira o modelo" />
+
+        <p>Qual o tipo do veículo?</p>
+        <select name="tipo_veiculo">
+            <option value="0" selected disabled>Selecione</option>
+            <option value="1">Carro</option>
+            <option value="2">Moto</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
